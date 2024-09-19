@@ -1,0 +1,14 @@
+name: CI - Bases
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: Inicializando
+       run: echo "Hola mundo. Bienvenido!"
