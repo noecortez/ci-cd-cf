@@ -12,11 +12,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4.1.7
-    
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v4.0.4
-      with:
-        node-version: 20
 
-    - name: Node Version
-      run: node --version
+    - name: List
+      uses: ./.github/actions/my-action

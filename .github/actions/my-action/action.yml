@@ -1,0 +1,10 @@
+name: "My Custom Action"
+description: "Action create from zero"
+
+runs:
+ using: "composite" # requerido
+
+ steps:
+  - name: Hola mundo
+    run: echo "Hola mundo mundial"
+    shell: bash
