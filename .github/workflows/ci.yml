@@ -10,5 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Inicializando
-       run: echo "Hola mundo. Bienvenido!"
+    - name: Inicializando
+      run: echo "Hola mundo. Bienvenido!"
+
+    - name: Touch File
+      run: touch file-test.txt
+
+    - name: Write on File
+      run: echo "Hola mundo" >> file-test.txt
+
+    - name: Read File
+      run: cat file-test.txt
+
+  other-build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: List filesystem
+      run: ls -la
